@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Hminhx⚡️6.0plus</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#f4f7ff}
+body{
+ background:#050812;
+ overflow-x:hidden;
+}
+canvas{position:fixed;inset:0;pointer-events:none;z-index:0}
+.glow{position:fixed;border-radius:50%;filter:blur(75px);opacity:.28;pointer-events:none}
+.g1{width:220px;height:220px;background:#26a8ff;top:-70px;left:-60px}
+.g2{width:250px;height:250px;background:#b62cff;right:-80px;bottom:-80px}
+#login,#app{position:relative;z-index:2}
+#login{min-height:100vh;display:grid;place-items:center;padding:20px}
+.loginCard,.panel{
+ background:linear-gradient(145deg,#111a2ddd,#0b1120e8);
+ border:1px solid #ffffff18;border-radius:25px;
+ box-shadow:0 22px 70px #0009;backdrop-filter:blur(18px)
+}
+.loginCard{width:min(92vw,410px);padding:32px;text-align:center}
+.lock{font-size:48px;margin-bottom:10px}
+h1{margin:0;font-size:27px}
+.muted{color:#9da9c1;font-size:13px;margin:9px 0 22px}
+input{
+ width:100%;padding:14px;border-radius:13px;border:1px solid #ffffff18;
+ background:#070b15;color:#fff;outline:none;text-align:center;font-size:16px
+}
+button{
+ border:0;border-radius:12px;padding:13px 16px;color:#fff;font-weight:700;
+ cursor:pointer;background:linear-gradient(135deg,#237dff,#8a38ff);
+ box-shadow:0 8px 25px #4377ff35
+}
+.loginBtn{width:100%;margin-top:12px}
+.msg{height:22px;margin-top:12px;font-size:13px}
+.err{color:#ff8494}.ok{color:#77f2b2}
+#app{display:none;padding:22px;max-width:850px;margin:auto}
+.header{text-align:center;margin:8px 0 22px}
+.brand{
+ font-size:clamp(32px,8vw,54px);font-weight:900;letter-spacing:-1.5px;
+ color:#fff;text-shadow:0 0 7px #fff,0 0 18px #34a9ff,0 0 38px #a43cff;
+ animation:pulse 2.4s ease-in-out infinite
+}
+.subtitle{color:#9eabc5;font-size:13px;margin-top:5px}
+@keyframes pulse{50%{text-shadow:0 0 10px #fff,0 0 25px #34a9ff,0 0 55px #a43cff}}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.panel{padding:18px}
+.full{grid-column:1/-1}
+.panel h2{font-size:16px;margin:0 0 15px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid #ffffff0d}
+.row:last-child{border-bottom:0}
+.label b{display:block}.label span{font-size:11px;color:#77849e}
+.switch{width:54px;height:30px;border-radius:30px;background:#28334b;padding:3px;transition:.2s}
+.switch i{display:block;width:24px;height:24px;border-radius:50%;background:#aab4c7;transition:.2s}
+.switch.on{background:#277cff;box-shadow:0 0 18px #277cff88}
+.switch.on i{transform:translateX(24px);background:#fff}
+button.switchBtn{background:none;box-shadow:none;padding:0}
+.console{
+ height:210px;overflow:hidden;background:#050812;border-radius:14px;
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hminhx⚡️6.0plus</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,sans-serif;color:white;background:radial-gradient(circle at 50% 0,#18335a,#070b16 45%,#02040a);overflow:hidden}
+#snow{position:fixed;inset:0;pointer-events:none}.s{position:absolute;top:-20px;color:white;opacity:.8;animation:fall linear infinite}@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.wrap{min-height:100vh;display:grid;place-items:center;padding:20px}.card{width:min(440px,100%);padding:25px;border:1px solid #55d9ff66;border-radius:24px;background:#07101dcc;backdrop-filter:blur(14px);box-shadow:0 0 35px #00bfff33}
+h1{text-align:center;margin:0 0 8px;font-size:30px;color:#dffaff;text-shadow:0 0 8px white,0 0 20px #00c8ff,0 0 35px #00c8ff}.sub{text-align:center;color:#9eb8ca;margin-bottom:24px}
+input,button{width:100%;padding:14px;border-radius:13px;font-size:16px}input{background:#020711;border:1px solid #31506b;color:white;outline:none}
+button{margin-top:12px;border:0;background:linear-gradient(90deg,#00a8ff,#6b5cff);color:white;font-weight:700;cursor:pointer}
+.msg{text-align:center;min-height:22px;margin-top:12px;font-weight:700}.hidden{display:none}
+.row{display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-bottom:1px solid #ffffff12}.switch{width:58px;height:32px;padding:3px;border-radius:30px;background:#243142;transition:.2s}.switch i{display:block;width:26px;height:26px;border-radius:50%;background:white;transition:.2s}.switch.on{background:#00b8ff;box-shadow:0 0 15px #00b8ff88}.switch.on i{transform:translateX(26px)}
+.status,.code{margin-top:16px;padding:13px;border-radius:13px;background:#071b25;border:1px solid #00c8ff33}.code{background:#03070d;color:#75dfff;font-family:monospace;font-size:12px;white-space:pre-wrap}.logout{background:#18202c;box-shadow:none}
+small{color:#7690a4}
+</style></head>
+<body><div id="snow"></div><div class="wrap">
+<section class="card" id="login"><h1>Hminhx⚡️6.0plus</h1><div class="sub">Khu vực bảo vệ</div>
+<input id="pass" type="password" placeholder="Nhập mật khẩu"><button id="loginBtn">ĐĂNG NHẬP</button>
+<div class="msg" id="msg"></div><small>Mật khẩu demo: NMinhx</small></section>
+<section class="card hidden" id="app"><h1>Hminhx⚡️6.0plus</h1><div class="sub">Bảng điều khiển mô phỏng</div>
+<div class="row"><div><b>Chế độ nhẹ tâm</b><br><small>Giao diện demo</small></div><button class="switch" data-name="nhẹ tâm"><i></i></button></div>
+<div class="row"><div><b>Bám đầu</b><br><small>Công tắc mô phỏng</small></div><button class="switch" data-name="bám đầu"><i></i></button></div>
+<div class="row"><div><b>Tối ưu FPS</b><br><small>Chỉ mô phỏng trạng thái</small></div><button class="switch" data-name="FPS cao"><i></i></button></div>
+<div class="status" id="status">● Chương trình đang chờ chạy</div>
+<div class="code" id="code">[SYSTEM] Hminhx⚡️6.0plus
+[STATUS] READY
+[MODE] DEMO ONLY</div><button class="logout" id="logout">ĐĂNG XUẤT</button></section></div>
+<script>
+const PASSWORD="NMinhx",login=document.querySelector("#login"),app=document.querySelector("#app"),pass=document.querySelector("#pass"),msg=document.querySelector("#msg");
+function enter(){if(pass.value===PASSWORD){login.classList.add("hidden");app.classList.remove("hidden");msg.textContent=""}else{msg.textContent="❌ Mật khẩu không đúng";msg.style.color="#ff7184";pass.value="";pass.focus()}}
+document.querySelector("#loginBtn").onclick=enter;pass.onkeydown=e=>{if(e.key==="Enter")enter()};
+document.querySelector("#logout").onclick=()=>{app.classList.add("hidden");login.classList.remove("hidden");pass.value=""};
+document.querySelectorAll(".switch").forEach(b=>b.onclick=()=>{b.classList.toggle("on");let n=b.dataset.name,on=b.classList.contains("on");document.querySelector("#status").textContent=(on?"● Đang bật: ":"○ Đã tắt: ")+n;document.querySelector("#code").textContent=`[SYSTEM] Hminhx⚡️6.0plus
+[STATUS] ${on?"RUNNING":"READY"}
+[FEATURE] ${n}
+[MODE] DEMO ONLY
+[TIME] ${new Date().toLocaleTimeString("vi-VN")}`});
+for(let i=0;i<35;i++){let x=document.createElement("span");x.className="s";x.textContent="❄";x.style.left=Math.random()*100+"%";x.style.fontSize=8+Math.random()*14+"px";x.style.animationDuration=6+Math.random()*10+"s";x.style.animationDelay=-Math.random()*12+"s";document.querySelector("#snow").appendChild(x)}
+</script></body></html>
